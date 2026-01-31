@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>💌 A Question 💌</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&family=DM+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css" />
+  <script defer src="./ask.js"></script>
+  <script defer src="./hearts-canvas.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</head>
+
+<body class="page page--pink" id="askBody">
+    <canvas id="heartCanvas" class="heart-canvas"></canvas>
+
+  <div class="bg-stickers" aria-hidden="true"></div>
+  <div class="hearts-layer" aria-hidden="true"></div>
+
+  <main class="neon-stage">
+    <div class="neon-frame">
+      <div class="neon-badge">💘 OFFICIAL QUESTION 💘</div>
+  
+      <h1 class="neon-title">
+        Will you be my<br/>Valentine?
+      </h1>
+  
+      <p class="neon-sub">
+        Unlimited access to Somik and his forehead kisses when he comes to you
+      </p>
+  
+      <div class="neon-btns">
+        <button class="candy-btn candy-btn--yes" id="yesBtn">YES :D</button>
+        <button class="candy-btn candy-btn--no" id="noBtn">NO :((</button>
+      </div>
+      </div>
+  
+    <div id="gifStage" class="gif-stage" aria-hidden="true"></div>
+  </main>
+  
+  
+  
+  
+
+  <div class="sparkles" aria-hidden="true"></div>
+
+  <!-- GIF popups will be injected here -->
+  <div id="gifStage" class="gif-stage" aria-hidden="true"></div>
+</body>
+</html>

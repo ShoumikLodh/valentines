@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SHE SAID YES!!!</title>
+
+  <!-- New cute celebratory fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@1,400;1,500;1,600&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="./styles.css">
+
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body class="yes-page">
+  <!-- Floating YES text layer -->
+  <div class="yes-float-layer" id="yesFloatLayer" aria-hidden="true"></div>
+
+  <main class="yes-wrap">
+
+    <h1 class="yes-title">Mwahhhh</h1>
+    <div class="yes-media">
+      <div class="yes-video-box" id="videoBox">
+        <video id="happyVideo" autoplay playsinline loop></video>
+      </div>
+    
+      <div class="record-only" id="recordBox" hidden>
+        <div class="record">
+          <div class="record__label">GLIMPSE OF US</div>
+          <div class="record__hole"></div>
+        </div>
+        <div class="record__shine"></div>
+      </div>
+      
+    </div>
+    
+    <!-- Music -->
+    <audio id="yesMusic" src="./music/yay.mp3" preload="auto"></audio>
+
+    <!-- Autoplay fallback -->
+    <button id="startPartyBtn" class="start-party" hidden>
+      Tap to start the celebration 🎶✨
+    </button>
+
+    <div class="yes-actions">
+      <button class="btn btn--primary btn--big" onclick="window.location.href='index.html'">
+        Play over 
+      </button>
+    </div>
+  </main>
+
+  <script defer src="./yes.js"></script>
+</body>
+</html>
